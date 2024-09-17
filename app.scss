@@ -1,0 +1,725 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+/*----------Codes of copy and paste----------*/
+
+@mixin check{
+    border: 3px solid blue;
+}
+
+@mixin dfja-code {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin section-code{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+@mixin header {
+    width: 100%;
+    height: 126px;
+}
+
+header {
+    @include header;
+}
+
+@mixin nav-top-code {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@mixin card-code {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.nav-top {
+    @include nav-top-code;
+    border-bottom: 1px solid #cfcedb;
+}
+
+.nav-top img {
+    width: 180px;
+    height: 43px;
+    margin-top: 10px;
+}
+
+.label-size {
+    width: 94%;
+    height: 100%;
+    border: 1px solid white;
+    font-size: 15px;
+}
+
+.search-bar {
+    @include dfja-code;
+    width: 400px;
+}
+
+form {
+    width: 400px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+ul {
+    @include dfja-code;
+    list-style: none;
+    font-size: 17px;
+}
+
+ul li {
+    padding: 10px 20px;
+    align-items: center;
+    border-left: 2px solid #cfcedb;
+}
+
+.dropdown {
+    @include dfja-code;
+    list-style: none;
+    font-size: 17px;
+    gap: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-top: 215px;
+    font-weight: 500;
+}
+
+.dropdown-content p {
+    font-weight: 500;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover {
+    border-bottom: 3px solid #9f2089;
+    cursor: pointer;
+}
+
+.play-store {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-store {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-right: 40px;
+}
+
+.icon-link a{
+    display: block;
+    text-decoration: none;
+}
+
+.nav-bottom {
+    @include dfja-code;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #cfcedb;
+}
+
+.nav-bottom-dropdown a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+}
+
+.nav-bottom-dropdown a:hover {
+    border-bottom: 3px solid #9f2089;
+}
+
+.lowest_prices {
+    @include dfja-code;
+    @include section-code;
+    width: 100%;
+}
+
+.container-a {
+    width: 100%;   
+}
+
+.container-content {
+    @include dfja-code;
+    flex-wrap: wrap;
+    background-color: #f8f9fe;
+    width: 100%;
+    padding-left: 40px;
+    height: 350px;
+}
+
+// .content-left {
+    
+// }
+
+// .content-right {
+    
+// }
+
+.content-left h1 {
+    font-size: 48px;
+    padding-bottom: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content-left a{
+    width: 321px;
+    height: 48px;
+    padding: 10px 50px;
+    color: white;
+    background-color: #9f2089;
+    border: 3px solid #9f2089;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#free-cash-easy-pic {
+    width: 496px;
+    height: 58px;
+    margin-bottom: 30px;
+}
+
+#maha-indian-pic {
+    width: 519px;
+    height: 350px;
+}
+
+.top-categories {
+    @include dfja-code;
+    justify-content: center;
+    width: 100%;
+    color: black;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+@media screen and (max-width:786px) {
+    .top-categories span{
+        display: block;
+    }
+}
+
+.top-categories-line {
+    width: 22%;
+    height: 1px;
+    background: rgb(217, 166, 208);
+}
+
+.be-fashion {
+    @include dfja-code;
+    @include section-code;
+    // @include check;
+    width: 100%;
+}
+
+.container-b {
+    // @include check;
+    width: 100%;
+    height: 561px;
+    background: url(/images/be-fashion.png) no-repeat center center/cover;
+}
+
+.container-content-b img {
+    padding-top: 90px;
+    padding-left: 15px;
+    padding-bottom: 30px
+}
+
+.essentials {
+    @include dfja-code;
+    @include section-code;
+    // @include check;
+    width: 100%;
+}
+
+.container-c {
+    // @include check;
+    @include dfja-code;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 561px;
+    background: url(/images/essential.png) no-repeat center center/cover;
+}
+
+.container-c img {
+    padding-left: 10px;
+}
+
+.container-content-c img {
+    padding-right: px;
+}
+
+.new-style {
+    @include dfja-code;
+    @include section-code;
+    // @include check;
+    width: 100%;
+}
+
+.container-d {
+    // @include check;
+    @include dfja-code;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 561px;
+    background: url(/images/new-stytle.png) no-repeat center center/cover;
+}
+
+.container-d img {
+    padding-left: 10px;
+}
+
+.container-content-d img {
+    padding-right: 0px;
+}
+
+.start-online {
+    // @include check;
+    @include section-code;
+    width: 100%;
+    // padding-left: 110px;
+    // padding-right: 110px;
+}
+
+.container-e {
+    // @include check;
+    // @include dfja-code;
+    width: 100%;
+    height: 525px;
+    background: url(/images/lady-pic.png) no-repeat center center/cover;
+    // margin-left: 110px;
+       
+}
+
+.container-content-e {
+    @include dfja-code;
+    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    padding-top: 45px;
+    padding-right: 30px;
+}
+
+.container-content-e h4 {
+    color: #5585F8;
+    // padding-top: 0px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.container-content-e h1 {
+    color: #9F2089;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: end;
+}
+
+.container-content-e img {
+    flex-direction: row;
+    width: 180px;
+    height: 48px;
+}
+
+.btn-play-iphone {
+    padding-top: 50px;
+}
+
+.register-as-a {
+    @include section-code;
+    width: 100%;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.container-f {
+    @include dfja-code;
+    // justify-content: left;
+    // align-items: baseline;
+    width: 100%;
+    height: 290px;
+    background: url(/images/men-tailor-pic.png) no-repeat center center/cover;   
+}
+
+.container-content-f {
+    @include dfja-code;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 30px;
+}
+
+.container-content-f h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.container-content-f p {
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.container-content-f a{
+    color: #9F2089;
+    font-size: 18px;
+    padding: 10px 10px;
+    font-weight: 600;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.products-for {
+    width: 100%;
+    // @include dfja-code;
+}
+
+.products-for h1 {
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+}
+
+.products-for-you {
+    @include dfja-code;
+    // @include check;
+    align-items: normal;
+    flex-wrap: nowrap;
+}
+
+.left-side {
+    padding-right: 100px;
+    padding-left: 15px;
+}
+
+.sort-by-bar {
+    background-color: white;
+    border: 1px solid #EAEAF2;
+    padding: 8px 24px 8px 1px;
+}
+
+.filters {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #cfcedb;
+}
+
+.filters p{
+    font-size: 12px;
+}
+
+.filters h4 {
+    font-size: 16px;
+}
+
+.right-side {
+    width: 100%;
+    // @include check;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin: 0 20px;
+    margin-bottom: 15px;
+}
+
+.grid-item {
+    padding: 3px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-1 {
+    @include card-code;
+}
+
+.card-1 h4 {
+    color: grey;
+}
+
+.price-1 {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.price-1 span {
+    font-size: 15px;
+    color: grey;
+}
+
+.card-1 h3 span {
+    color: grey;
+    font-size: 13px;
+}
+
+.card-2 {
+    @include card-code;
+}
+
+.card-2 h4 {
+    color: grey;
+}
+
+.price-2 {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.price-2 span {
+    color: green;
+    font-size: 15px;
+}
+
+.card-2 h3 span {
+    color: grey;
+    font-size: 13px;
+}
+
+.card-3 {
+    @include card-code;
+}
+
+.card-3 h4 {
+    color: grey;
+}
+
+.price-3 {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.price-3 span {
+    color: grey;
+    font-size: 15px;
+}
+
+.card-3 h3 span {
+    color: grey;
+    font-size: 13px;
+}
+
+.card-4 {
+    @include card-code;
+}
+
+.card-4 h4 {
+    color: grey;
+}
+
+.price-4 {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.price-4 span {
+    color: grey;
+    font-size: 15px;
+}
+
+.card-4 h3 span {
+    color: grey;
+    font-size: 13px;
+}
+
+.card-5 {
+    @include card-code;
+}
+
+.card-5 h4 {
+    color: grey;
+}
+
+.price-5 {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.price-5 span {
+    color: grey;
+    font-size: 15px;
+}
+
+.card-5 h3 span {
+    color: grey;
+    font-size: 13px;
+}
+
+.card-6 {
+    @include card-code;
+}
+
+.card-6 h4 {
+    color: grey;
+}
+
+.price-6 {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.price-6 span {
+    color: grey;
+    font-size: 15px;
+}
+
+.card-6 h3 span {
+    color: grey;
+    font-size: 13px;
+}
+
+.card-7 {
+    @include card-code;
+}
+
+.card-7 h4 {
+    color: grey;
+}
+
+.price-7 {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.price-7 span {
+    color: grey;
+    font-size: 15px;
+}
+
+.card-7 h3 span {
+    color: grey;
+    font-size: 13px;
+}
+
+.card-8 {
+    @include card-code;
+}
+
+.card-8 h4 {
+    color: grey;
+}
+
+.price-8 {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.price-8 span {
+    color: grey;
+    font-size: 15px;
+}
+
+.card-8 h3 span {
+    color: grey;
+    font-size: 13px;
+}
+
+.footer {
+    width: 100%;
+    height: 342px;
+    background-color:   rgb(220 220 230 / 47%);
+}
+
+.foot-container {
+    @include dfja-code;
+    align-items: baseline;
+    text-align: left;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:   rgb(220 220 230 / 47%);
+}
+
+.content-1 p {
+    color: #616173;
+    font-weight: 500;
+}
+
+.content-1 img {
+    border-radius: 5px;
+    gap: 5px;
+}
+
+.content-2 {
+    @include dfja-code;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.content-2 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #616173;
+}
+
+.content-3 {
+    @include dfja-code;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.content-3 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #616173;
+}
